@@ -1,0 +1,131 @@
+:root{
+    --purple-50: hsl(260, 100%, 95%);
+    --purple-300:hsl(264, 82%, 80%);
+    --purple-500: hsl(263,55%,52%);
+    --white: hsl(0, 0%, 100%);
+    --grey-100: hsl(214, 17%, 92%);
+    --grey-200:hsl(0, 0%, 81%);
+    --grey-400:hsl(224, 10%, 45%);
+    --grey-500:hsl(217, 19%, 35%);
+    --dark-blue: hsl(219, 29%, 14%);
+    --black: hsl(0, 0%, 7%);
+}
+
+body{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    background-color: var(--grey-100);
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    padding: 1em 5em 0 5em;
+}
+.testimonials{
+    display:flex;
+    width:70%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.testimonials-big{
+    position: relative;
+    background-color: var(--purple-500);
+    padding: 1.5em;
+    width: 68%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.info .img{
+    width: 35%;
+    margin-right: .5rem;
+}
+.info .images img{
+    width: 100%;
+    border-radius: 50%;
+}
+.quote{
+    align-self: flex-end;
+}
+ .info .name{
+    color: white;
+ }
+ .name h3{
+    font-size: 15px;
+ }
+ .name p{
+    color: white;
+    font-size: 10px;
+    opacity: 50%;
+ }
+ .view .bold{
+    margin: 13px 0;
+    font-weight: 600;
+    color: white;
+ }
+ .testimonials-small{
+    background-color: var(--grey-400);
+    width: 30%;
+    border-radius: 10px;
+    padding: 1.5em;
+    margin-bottom: 10px;
+ }
+ .white{
+    background-color: white;
+ }
+ .white,
+ .white .name,
+ .white p ,
+ .white .name p ,
+ .white .view .bold{
+    color: black;
+ }
+ .testimonial{
+    background: white;
+    color: black;
+    width: 25%;
+    border-radius: 10px;
+    padding: 1.5em;
+ }
+ @media (max-width: 1024px) {
+     .testimonials-big{
+        width: 60%;
+     }
+     .testimonials-small{
+        width: 38%;
+     }
+ }
+ @media (max-width:843px) {
+      .container{
+        flex-direction: column;
+      }
+      .testimonial,
+      .testimonials{
+        width: 100%;
+      }
+ }
+ @media (max-width:650px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding: 3em auto;
+    }
+    .testimonials{
+        width: 100%;
+        flex-direction: column;
+    }
+    .testimonial,
+    .testimonials-big,
+    .testimonials-small{
+        width: 100%;
+    }
+ }
