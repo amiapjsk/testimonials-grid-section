@@ -1,40 +1,49 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root{
-    --purple-50: hsl(260, 100%, 95%);
-    --purple-300:hsl(264, 82%, 80%);
-    --purple-500: hsl(263,55%,52%);
-    --white: hsl(0, 0%, 100%);
-    --grey-100: hsl(214, 17%, 92%);
-    --grey-200:hsl(0, 0%, 81%);
-    --grey-400:hsl(224, 10%, 45%);
-    --grey-500:hsl(217, 19%, 35%);
-    --dark-blue: hsl(219, 29%, 14%);
-    --black: hsl(0, 0%, 7%);
+    --purple:hsl(263, 55%, 52%);
+     --gray500:  hsl(217, 19%, 35%);
+     --darkblue:   hsl(219, 29%, 14%);
+     --gray200:  hsl(0, 0%, 96%);
+     --gray100:  hsl(210, 46%, 95%);
 }
-
+.black{
+    color:white;
+}
 body{
-    font-family: "Barlow Semi Condensed", sans-serif;
-    background-color: var(--grey-100);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: var(--gray200);
 }
-
+p{
+    font-size: 16px;
+    color: var(--gray500);
+    opacity: 70%;
+}
 .container{
     display: flex;
-    justify-content: space-between;
+    padding: 1em 5em  0 5em;
     margin-top: 1.5rem;
-    padding: 1em 5em 0 5em;
+    justify-content: space-between;
 }
 .testimonials{
-    display:flex;
-    width:70%;
+    width: 70%;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 .testimonials-big{
     position: relative;
-    background-color: var(--purple-500);
-    padding: 1.5em;
+    background-color: var(--purple);
     width: 68%;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: 1.5em;
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -49,10 +58,8 @@ body{
 }
 .info .images img{
     width: 100%;
+   
     border-radius: 50%;
-}
-.quote{
-    align-self: flex-end;
 }
  .info .name{
     color: white;
@@ -71,7 +78,7 @@ body{
     color: white;
  }
  .testimonials-small{
-    background-color: var(--grey-400);
+    background-color: var(--darkblue);
     width: 30%;
     border-radius: 10px;
     padding: 1.5em;
@@ -93,23 +100,13 @@ body{
     width: 25%;
     border-radius: 10px;
     padding: 1.5em;
+    margin-left: 10px;
  }
- @media (max-width: 1024px) {
-     .testimonials-big{
-        width: 60%;
-     }
-     .testimonials-small{
-        width: 38%;
-     }
- }
- @media (max-width:843px) {
-      .container{
-        flex-direction: column;
-      }
-      .testimonial,
-      .testimonials{
-        width: 100%;
-      }
+ .quote{
+    margin-left: auto;
+    text-align: right;
+    margin-right: 10%;
+    margin-top: 0%;
  }
  @media (max-width:650px) {
     .container{
@@ -127,5 +124,8 @@ body{
     .testimonials-big,
     .testimonials-small{
         width: 100%;
+    }
+    .quote{
+        display: none;
     }
  }
