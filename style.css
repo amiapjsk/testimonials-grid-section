@@ -124,6 +124,7 @@ p{
     .testimonials-big,
     .testimonials-small{
         width: 100%;
+        padding-top:1.5em;
     }
     .quote{
         display: none;
